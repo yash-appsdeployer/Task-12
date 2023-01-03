@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(90deg, rgba(38, 215, 171, 1) 0%, rgb(80, 180, 234) 100%, rgb(6, 240, 29) 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-style {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.nav-style:hover {
+  color: #fff;
+}
+
+.heading h2 {
+  font-size: 1.5rem;
+  color: #000;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.container-one {
+  background-color: rgba(211, 211, 211, 0.326);
+  margin-top: 10px;
+  max-width: 500px;
+  width: 80vw;
+  padding: 20px;
+  bclsorder-radius: 15px;
+  box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-one:hover {
+  background-color: rgba(241, 241, 242, 0.352);
+  transition: all 0.3s ease-in-out;
+}
+
+.interest {
+  border: none;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+label {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+input {
+  margin-bottom: 20px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+
+.input-text {
+  background-color: rgba(255, 255, 255, 0.63);
+  border: none;
+}
+
+.input-text:focus {
+  background: rgba(255, 255, 255, 0.865);
+}
+
+.duration {
+  border: none;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.compound {
+  border: none;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+.btn {
+  padding: 5px 25px;
+  background: rgba(255, 255, 255, 0.63);
+}
+
+.btn:hover {
+  background: rgba(6, 6, 6, 0.427);
+  color: #fff;
+  transition: all .5s ease-in-out;
+}
+
+.container-two {
+  background-color: rgba(211, 211, 211, 0.326);
+  margin-top: 50px;
+  max-width: 700px;
+  width: 90vw;
+  padding: 30px 30px;
+  border-radius: 15px;
+  box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-two:hover {
+  background-color: rgba(242, 241, 241, 0.591);
+  transition: 0.6s ease-in-out;
+}
+
+.result-area {
+  background-color: rgba(255, 255, 255, 0.349);
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  max-width: 500px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.612);
+}
+
+@media screen and (max-width: 1200px) {
+  .container-one {
+    margin: 0 auto;
+  }
+
+  .container-two {
+    margin: 0 auto;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 350px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .heading h2 {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  input {
+    padding: 5px 20px;
+  }
+
+  label {
+    font-size: 10px;
+  }
+
+  .btn {
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+
+
+  .result-area {
+    font-size: .8rem;
   }
 }
